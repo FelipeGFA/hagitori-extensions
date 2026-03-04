@@ -1,6 +1,6 @@
 {
   "name": "hagitori.multi.mangadex",
-  "version": 2,
+  "version": 1,
   "main": "index.js",
   "hagitori": {
     "apiVersion": 1,

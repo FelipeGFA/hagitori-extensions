@@ -1,6 +1,6 @@
 {
   "name": "hagitori.pt-br.sakuramangas",
-  "version": 3,
+  "version": 1,
   "main": "index.js",
   "hagitori": {
     "apiVersion": 1,

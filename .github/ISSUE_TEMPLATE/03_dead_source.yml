@@ -1,0 +1,38 @@
+name: "\U0001F480 Dead Source"
+description: Report a source that is permanently offline or no longer available
+labels: ["dead source"]
+body:
+  - type: input
+    id: extension
+    attributes:
+      label: Extension name
+      placeholder: 'Example: "Not Real Scans"'
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Source URL
+      description: The URL that is no longer accessible.
+      placeholder: "https://notrealscans.org"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Any additional context (e.g., the site moved to a different domain, shut down permanently, etc.)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I have confirmed the source has been offline for more than a week.
+          required: true
+        - label: I have searched [existing issues](https://github.com/hagitori/hagitori-extensions/issues) and confirmed this is not a duplicate.
+          required: true

@@ -1,0 +1,86 @@
+name: "\U0001F41E Extension Issue"
+description: Report a broken or misbehaving extension
+labels: ["bug"]
+body:
+  - type: input
+    id: extension
+    attributes:
+      label: Extension name and version
+      description: You can find this in the extensions list.
+      placeholder: 'Example: "MangaDex 0.1.0"'
+    validations:
+      required: true
+
+  - type: input
+    id: language
+    attributes:
+      label: Extension language
+      placeholder: 'Example: "Multi" or "en"'
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide clear steps to reproduce the issue.
+      placeholder: |
+        1. Search for manga "..."
+        2. Open chapter list
+        3. Try to download chapter X
+        4. Error occurs
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: 'Example: "Chapter images should download correctly"'
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: 'Example: "Download fails with error: ..."'
+    validations:
+      required: true
+
+  - type: input
+    id: hagitori-version
+    attributes:
+      label: Hagitori version
+      description: Which app version?
+      placeholder: 'Example: "1.0.0"'
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: Which OS?
+      placeholder: "Windows 11, Ubuntu 22.04, etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: other
+    attributes:
+      label: Additional details
+      placeholder: Logs, screenshots, or any other relevant information.
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      description: Your issue will be closed if you haven't done these steps.
+      options:
+        - label: I have searched [existing issues](https://github.com/hagitori/hagitori-extensions/issues) and confirmed this is not a duplicate.
+          required: true
+        - label: I have updated the extension to the latest version.
+          required: true
+        - label: I have updated Hagitori to the latest version.
+          required: true

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "types": [],
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declaration": false,
+    "outDir": "./builds",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "paths": {
+      "@templates/*": ["./src/templates/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "types.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "builds"
+  ]
+}

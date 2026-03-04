@@ -1,0 +1,18 @@
+{
+  "name": "hagitori.pt-br.sakuramangas",
+  "version": 3,
+  "main": "index.js",
+  "hagitori": {
+    "apiVersion": 1,
+    "type": "source",
+    "displayName": "Sakura Mangás",
+    "lang": "pt-br",
+    "domains": [
+      "sakuramangas.org"
+    ],
+    "capabilities": [
+      "browser"
+    ],
+    "supportsDetails": true
+  }
+}

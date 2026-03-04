@@ -1,0 +1,10 @@
+{
+  "hagitori": {
+    "displayName": "Manga Livre",
+    "domains": ["mangalivre.tv"],
+    "template": "Madara",
+    "overrideVersion": 0,
+    "capabilities": ["browser"],
+    "supportsDetails": true
+  }
+}

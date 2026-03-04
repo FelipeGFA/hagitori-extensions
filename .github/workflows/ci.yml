@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+    paths: ["src/**", "builds/**", ".github/scripts/**", "package.json"]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build Extensions
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Type check
+        run: pnpm exec tsc --noEmit
+
+      - name: Build extensions
+        run: node .github/scripts/build.mjs
+
+      - name: Verify builds exist
+        run: |
+          if [ -z "$(find builds -name '*.js' -type f)" ]; then
+            echo "::error::No built extension files found in builds/"
+            exit 1
+          fi
+          echo "Built extensions:"
+          find builds -name '*.js' -type f

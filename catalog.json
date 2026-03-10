@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-03-04T16:10:20.882Z",
-  "repo": "hagitori/hagitori-extensions",
+  "updated_at": "2026-03-10T19:27:01.118Z",
+  "repo": "FelipeGFA/hagitori-extensions",
   "branch": "main",
   "extensions": [
     {
       "id": "hagitori.multi.mangadex",
       "name": "MangaDex",
       "lang": "multi",
-      "version_id": 1,
+      "version_id": 2,
       "path": "builds/multi/mangadex",
       "entry": "index.js",
       "requires": [],
@@ -64,7 +64,7 @@
       "files": {
         "icon.png": "dcdf38c24f9fce2d02db71444fbf217969aeaf0be9033e8f349633ece1dc8ffa",
         "index.js": "b9ae42a5a89c38223555d1546f39891d27cd97a9002fee366d3a9b6179d284da",
-        "package.json": "e2b0c481635dfc081f206a7cd14b52d5662ca02308072ea500b8da31eebffa3d"
+        "package.json": "a2a47a3d32f8e5cd6af1e984b3bbb0ba1adb092e6a52f555090675dc61c9cb85"
       },
       "min_app_version": null
     },

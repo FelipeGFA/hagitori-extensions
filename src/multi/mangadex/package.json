@@ -2,7 +2,7 @@
   "hagitori": {
     "displayName": "MangaDex",
     "domains": ["mangadex.org", "api.mangadex.org"],
-    "version": 1,
+    "version": 2,
     "supportsDetails": true,
     "languages": ["en", "pt-br", "es", "es-la", "fr", "de", "it", "ru", "ja", "ko", "zh", "zh-hk", "ar", "id", "pl", "th", "tr", "vi", "uk", "hu", "nl", "sv", "cs", "ro", "fi", "el", "he", "hi", "ms", "tl", "no", "da", "bg", "my", "mn", "fa", "lt", "ca", "bn", "ne"]
   }
